@@ -8,6 +8,6 @@ fun multiCycle (0, L) = L
   | multiCycle (i, L) = multiCycle (i-1, cycleList(L));
 
 
-fun ic (nil, i) = nil
+fun ic (nil, _) = nil
   | ic (x::xs, 1) = xs@[x]
   | ic (x::xs, i) = ic (xs@[x], i-1)
