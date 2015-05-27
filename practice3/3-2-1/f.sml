@@ -1,3 +1,4 @@
+(* 整数のリストの最大値を計算する関数 *)
 fun maxelement(L) = 
   if tl(L) = nil then hd(L)
   else if hd(L) > maxelement(tl(L)) then hd(L)
