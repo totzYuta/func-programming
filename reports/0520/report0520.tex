@@ -1,0 +1,59 @@
+\documentclass[a4j]{jarticle}
+
+\usepackage{listings}
+
+\lstset{%
+  language={},
+  basicstyle={\small\ttfamily},%
+  identifierstyle={\small},%
+  commentstyle={\small\itshape},%
+  keywordstyle={\small\bfseries},%
+  ndkeywordstyle={\small},%
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},%
+  numbers=left,%
+  xrightmargin=0zw,%
+  xleftmargin=3zw,%
+  numberstyle={\scriptsize},%
+  stepnumber=1,
+  numbersep=1zw,%
+  lineskip=-0.5ex%
+}
+
+\title{レポート}
+\author{\\学籍番号：09425566\\氏名：佐藤 佑太}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+
+\section{演習課題}
+
+
+\subsection{3.3.3}
+
+\begin{verbatim}
+fun deleteElement (nil, _) = L
+  | deleteElement (x::xs, i) = if then deleteElement(xs, );
+\end{verbatim}
+
+\subsection{3.3.12}
+
+\begin{verbatim}
+fun insertFirst (nil, a) = a::L
+  | insertFirst ([x]::[xs], _) = insertFirst([x]);
+\end{verbatim}
+
+\subsection{3.3.9}
+
+\begin{verbatim}
+fun isFirstVowel (x::_) = if x="a" orelse x="i" orelse x="u" orelse x="e" orelse x="o" then true else false;
+\end{verbatim}
+
+
+\end{document}
