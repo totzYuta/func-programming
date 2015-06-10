@@ -11,3 +11,13 @@ in
   if h(L) > maxElementOfTail then h(L)
   else maxElementOfTail
 end;
+
+(* answer *)
+fun maxNumber (x::nil) = x
+  | maxNumber (x::xs) = 
+  let
+    val m = maxNumber (xs)
+  in
+    if x > m then x
+    else m
+  end;
