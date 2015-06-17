@@ -1,0 +1,46 @@
+\documentstyle[a4j]{jarticle}
+
+% 以下のパラメータは特に変更する必要はないはず
+\oddsidemargin  -5mm
+\evensidemargin -5mm
+\textwidth      170mm
+\textheight     250mm
+\topmargin      -20mm
+
+\begin{document}
+
+Non-procedural Programming Language
+\\
+2015/04/22
+\\
+09425566
+Yuta Sato 
+\\
+\\
+(a)
+\begin{verbatim}
+fun makePair (a,b,c)
+   = if a < b then if b < c then [a,c]
+                   else if a < c then [a,b]
+                        else [c,b]
+     else if c < b then [c,a]
+          else if a < c then [b,c]
+               else [c,a]
+\end{verbatim}
+
+
+(b)
+
+\begin{verbatim}
+fun sort3 (a,b,c)
+   = if a < b then if b < c then [a,b,c]
+                   else if a < c then [a,c,b]
+                        else [c,a,b]
+     else if c < b then [c,b,a]
+          else if a < c then [b,a,c]
+               else [c,b,a]
+\end{verbatim}
+
+
+
+\end{document}
