@@ -1,0 +1,52 @@
+\documentstyle[a4j]{jarticle}
+
+% 以下のパラメータは特に変更する必要はないはず
+\oddsidemargin  -5mm
+\textwidth      170mm
+\textheight     250mm
+\topmargin      -20mm
+
+\begin{document}
+
+Non-procedural Programming Language
+\\
+2015/06/24
+\\
+09425566
+佐藤 佑太
+\\
+\\
+(a)
+\begin{verbatim}
+(* a. 実数のリストの最大値を求める *)
+- reduce (fn (x,y) => if x>y then x 
+                      else (y:real), [1.1, ~2.2, 3.3]);
+\end{verbatim}
+
+
+(b)
+\begin{verbatim}
+(* b. 実数のリストの最小値を求める *)
+- reduce (fn (x,y) => if x<y then x
+                      else (y:real), 
+          [1.9, ~2.6, 3.1])
+\end{verbatim}
+
+
+(c)
+\begin{verbatim}
+(* c. 文字列のリストの全ての要素を連結してひとつの文字列にする *)
+- reduce (fn (x,y) => x^y)
+\end{verbatim}
+
+(d)
+\begin{verbatim}
+(* d. ブール型のリストの論理和を求める *)
+- reduce (fn (x,y) => x orelse y)
+\end{verbatim}
+
+5.4.8 
+リストの最初の値から、その後の値をどんどん引いていった値
+
+
+\end{document}
