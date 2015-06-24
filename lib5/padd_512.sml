@@ -1,9 +1,11 @@
 (* padd.sml *)
 
 (* 
+
 fun padd(P, nil) =  P
   | padd(nil, Q) = Q
   | padd((P:real)::ps, q) = (p+q)::padd(ps,qs);
+
 *)
 
 (* 再帰で使うときはrecをつける *)
