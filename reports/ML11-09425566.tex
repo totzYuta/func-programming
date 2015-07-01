@@ -1,0 +1,40 @@
+\documentstyle[a4j]{jarticle}
+
+% 以下のパラメータは特に変更する必要はないはず
+\oddsidemargin  -5mm
+\textwidth      170mm
+\textheight     250mm
+\topmargin      -20mm
+
+\begin{document}
+
+Non-procedural Programming Language
+\\
+2015/07/1
+\\
+09425566
+佐藤 佑太
+\\
+\\
+(a)
+\begin{verbatim}
+(* a. 整数のリストを実数のリストに変換する関数 *)
+- map (fn (x) => real x) [2, 3, 5, 10];
+\end{verbatim}
+
+
+(b)
+\begin{verbatim}
+(* b. 整数のリストLをLの各要素の絶対値でかつ実数のリストに変換する関数 *)
+- map (fn (x) => real (abs x)) [2, 3, ~5, 10, ~24];
+\end{verbatim}
+
+
+(c)
+\begin{verbatim}
+(* c. 関数implode, すなわち、文字のリストを一つの文字列に変換する関数 *)
+- foldr (fn (x,y) => x^y) (map (fn (x) => str x) [#"H", #"e", #"l", #"l", #"o", #"!"]); 
+\end{verbatim}
+
+
+\end{document}
