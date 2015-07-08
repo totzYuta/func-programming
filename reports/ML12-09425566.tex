@@ -1,0 +1,32 @@
+\documentstyle[a4j]{jarticle}
+
+% 以下のパラメータは特に変更する必要はないはず
+\oddsidemargin  -5mm
+\evensidemargin -5mm
+\textwidth      170mm
+\textheight     250mm
+\topmargin      -20mm
+
+\begin{document}
+
+Non-procedural Programming Language
+\\
+2015/07/08
+\\
+09425566
+佐藤 佑太
+\\
+\\
+演習5.5.6
+\\
+\begin{verbatim}
+fun applyList nil _ = nil
+  | applyList (F::Fs) x = F x :: applyList Fs x;
+
+fun isSubsequence2 (x, nil) = isSubsequence1 (x, nil)
+  | isSubsequence2 (x, y::ys) = isSubsequence1 (x, y::ys) orelse isSubsequence2
+  (x, ys);
+\end{verbatim}
+
+
+\end{document}
